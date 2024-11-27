@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?selectableItemBackground"
+    android:orientation="horizontal"
+    android:paddingTop="10dp"
+    android:animateLayoutChanges="true"
+    android:paddingBottom="10dp">
+
+    <Space
+        android:id="@+id/space"
+        android:layout_width="0dp"
+        android:layout_height="match_parent" />
+
+<!--    <com.google.android.material.checkbox.MaterialCheckBox-->
+<!--        android:id="@+id/checkbox"-->
+<!--        android:clickable="false"-->
+<!--        android:focusable="false"-->
+<!--        android:layout_width="22dp"-->
+<!--        android:layout_height="22dp"-->
+<!--        android:layout_marginLeft="6dp"-->
+<!--        android:layout_marginRight="2dp"-->
+<!--        android:layout_gravity="center_vertical"-->
+<!--        android:visibility="gone" />-->
+
+    <ImageView
+        android:id="@+id/iv_arrow"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:layout_gravity="center_vertical"
+        android:src="@mipmap/ic_drop" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="6dp"
+        android:drawablePadding="12dp"
+        android:gravity="center_vertical"
+        android:textSize="18sp"
+
+        tools:text="@string/app_name" />
+
+<!--app:drawableLeftCompat="@drawable/baseline_folder_24"-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:thumb="@drawable/bg_switch_thumb"
+            android:track="@drawable/bg_switch_selector"
+            android:id="@+id/switch_on"
+            tools:ignore="UseSwitchCompatOrMaterialXml" />
+    </RelativeLayout>
+
+</LinearLayout>
